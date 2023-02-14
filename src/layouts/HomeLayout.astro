@@ -1,0 +1,22 @@
+---
+import { SITE } from "@config";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Layout from "./Layout.astro";
+
+export interface Props {
+  frontmatter: {
+    description?: string;
+  };
+}
+---
+
+<Layout title={`${SITE.title}`}>
+  <Header />
+  <main id="main-content">
+    <section id="home" class="prose mb-28 max-w-3xl pt-4 prose-img:border-0">
+      <slot />
+    </section>
+  </main>
+  <Footer />
+</Layout>

@@ -1,6 +1,5 @@
 ---
-layout: ../layouts/AboutLayout.astro
-title: "About"
+layout: ../layouts/HomeLayout.astro
 ---
 
 ### Hi there 👋
